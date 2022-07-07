@@ -3,6 +3,9 @@
 /**
  * This program prints the largest of three integers.
  * @a: first integer
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
  * Return: largest number
  */
 
