@@ -12,7 +12,7 @@ int main(void)
 
 	n = 10;
 	printf("value of 'n': %d\n", n);
-	reset_to_98(98);
+	reset_to_98(&n);
 	printf("n=%d\n", n);
 
 	return (0);
