@@ -3,9 +3,9 @@
 
 /**
  * function that takes a pointer to an int as parameter
- * updates the value it points to to 98
- * @n:98
- * Return: Always 0.
+ *                 and updates the value it points to to 98
+ * @n: int parameter
+ * Return: Nothing.
  */
 void reset_to_98(int *n)
 {
