@@ -6,7 +6,6 @@
  * @src: source
  * Return: pointer to dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int count = 0, count1 = 0;
@@ -16,7 +15,7 @@ char *_strcat(char *dest, char *src)
 		count++;
 	}
 
-	while(count >= 0)
+	while(count1 >= 0)
 	{
 		*(dest + count) = *(src + count1);
 		if (*(src + count1) == '\0')
