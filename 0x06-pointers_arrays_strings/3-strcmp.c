@@ -3,7 +3,7 @@
 /**
  * _strcmp - compares two strings
  *              returns zero if s1 == s2
- *              returns negative number if s1 < s2 
+ *              returns negative number if s1 < s2
  *              returns positive number if s1 > s2
  *
  *@s1: first parameter
