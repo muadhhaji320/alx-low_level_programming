@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _memcpy - copies n bytes from src memory area to dest memory area
+ *_memcpy - copies n bytes from src memory area  to dest memory area
  *@dest: dest parameter
  *@src: src parameter
- *@: number of bytes to be copied
- *Return char *
+ *@n: number of bytes to be copied
+ *Return: char *
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
