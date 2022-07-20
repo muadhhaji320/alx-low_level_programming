@@ -8,7 +8,7 @@ void _puts_recursion(char *s)
 {
 	while (*s != '\0')
 	{
-		_puts_recursion("%c\n",*s);
+		_puts_recursion("hello");
 		s++;
 	}
 }
