@@ -8,7 +8,7 @@ void _puts_recursion(char *s)
 {
 	while (*s != '\0')
 	{
-		putchar("hello\n",*s);
+		_puts_recursion("Puts with recursion\n",*s);
 		ch++;
 	}
 }
