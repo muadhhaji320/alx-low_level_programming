@@ -1,18 +1,18 @@
 #include "main.h"
 
-int find_len(char *str);
+int len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 
 /**
- * find_len - Finds the length of a string.
+ * len - Finds the length of a string.
  * @str: The string to be measured.
  *
  * Return: The length of the string.
  */
-int find_len(char *str)
+int len(char *str)
 {
 	int len = 0;
 
@@ -99,7 +99,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
 	int mult_len, num, tens = 0;
 
-	mult_len = find_len(mult) - 1;
+	mult_len = len(mult) - 1;
 	mult += mult_len;
 
 	while (*prod)
@@ -206,11 +206,11 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	size = find_len(argv[1]) + find_len(argv[2]);
+	size = len(argv[1]) + len(argv[2]);
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
-	for (index = find_len(argv[2]) - 1; index >= 0; index--)
+	for (index = len(argv[2]) - 1; index >= 0; index--)
 	{
 		digit = get_digit(*(argv[2] + index));
 		get_prod(next_prod, argv[1], digit, zeroes++);
